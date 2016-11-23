@@ -18,10 +18,13 @@ with open(sys.argv[1], 'r') as f:
 
 with open(sys.argv[2], 'w') as f:
 	for key in sorted(d.keys()):
-		total = 1
+		total = 0
+		d2 = dict()
 		for n,i in enumerate(sorted(d[key])):
-			pr = random.uniform((total)/(len(d[key])-n+1), (total)/(len(d[key])-n))
-			if (n == len(d[key])- 1): pr = total
-			total -= pr
-			f.write("{}({}, {}).\n".format(key, str(pr), i))
+			pr = random.randint(1, len(d[key]))
+			total += pr
+			d2[i] = pr	
+		for k in d2.keys():
+			d2[k] /= total
+			f.write("{}({}, {}).\n".format(key, str(d2[k]), k))
 		f.write("\n")

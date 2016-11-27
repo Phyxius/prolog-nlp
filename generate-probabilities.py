@@ -24,7 +24,7 @@ with open(sys.argv[2], 'w') as f:
 			pr = random.randint(1, len(d[key]))
 			total += pr
 			d2[i] = pr	
-		for k in d2.keys():
+		for k in sorted(d2.keys()):
 			d2[k] /= total
 			f.write("{}({}, {}).\n".format(key, str(d2[k]), k))
 		f.write("\n")

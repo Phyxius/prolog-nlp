@@ -4,6 +4,7 @@ nounphrase(Prob, [Noun | End], End) :- noun(P1, Noun, _), pr(r2, P), Prob is P*P
 nounphrase(Prob, [Article, Noun | End], End) :- article(P1, Article, _), noun(P2, Noun, _), pr(r3, P), Prob is P*P1*P2.
 verbphrase(Prob, [Verb | End], End) :- verb(P1, Verb, _), pr(r4, P), Prob is P*P1.
 verbphrase(Prob, [Verb | Rest], End) :- verb(P1, Verb, _), nounphrase(P2, Rest, End), pr(r5, P), Prob is P*P1*P2.
+verbphrase(Prob, [Adverb | Rest], End) :- adverb(P1, Adverb), verbphrase(P2, Rest, End), pr(r6, P), Prob is P*P1*P2.
 pr(r1, 1.0).
 pr(r2, 0.3).
 pr(r3, 0.7).

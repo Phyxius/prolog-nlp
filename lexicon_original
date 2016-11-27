@@ -44,7 +44,7 @@ verb(praise, plural).
 verb(exalts, singular).
 verb(exalt, plural).
 
-noun(i, singular).
+noun(i, plural).
 noun(we, plural).
 noun(it, singular).
 noun(it, plural).

@@ -16,9 +16,11 @@ adjectivephrase([Noun | End], End, Number) :- noun(Noun, Number).
 
 
 verbphrase([Verb | End], End, Number) :- verb(Verb, Number).
-verbphrase([Verb, Adverb | End], End, Number) :- verb(Verb, Number), adverb(Adverb).
+%%verbphrase([Adverb, Verb | End], End, Number) :- verb(Verb, Number), adverb(Adverb).
 verbphrase([Verb | Rest], End, Number) :- verb(Verb, Number), nounphrase(Rest, End, _).
-verbphrase([Verb, Adverb | Rest], End, Number) :- verb(Verb, Number), adverb(Adverb), nounphrase(Rest, End, _).
+%%verbphrase([Adverb, Verb | Rest], End, Number) :- verb(Verb, Number), adverb(Adverb), nounphrase(Rest, End, _).
+verbphrase([Adverb | Rest], End, Number) :- adverb(Adverb), verbphrase(Rest, End, Number).
+
 
 
 

@@ -7,7 +7,7 @@ nounphrase(Prob, [Article, Noun | End], End) :- article(P1, Article, _), noun(P2
 verbphrase(Prob, [Verb | End], End) :- verb(P1, Verb, _), pr(r4, P), Prob is P*P1.
 verbphrase(Prob, [Verb | Rest], End) :- verb(P1, Verb, _), nounphrase(P2, Rest, End), pr(r5, P), Prob is P*P1*P2.
 verbphrase(Prob, [Adverb | Rest], End) :- adverb(P1, Adverb), verbphrase(P2, Rest, End), pr(r6, P), Prob is P*P1*P2.
-verbphrase(Prob, Verbphrase, End) :- tail(Verbphrase, Tail), adverb(P3, Tail), allbuttail(Verbphrase, Prefix), verbphrase(P1, Prefix, End), adverb(P2, Tail), pr(r7, P), Prob is P*P1*P2*P3. 
+verbphrase(Prob, Verbphrase, End) :- tail(Verbphrase, Tail), allbuttail(Verbphrase, Prefix), verbphrase(P1, Prefix, End), adverb(P2, Tail), pr(r7, P), Prob is P*P1*P2. 
 pr(r1, 1.0).
 pr(r2, 0.3).
 pr(r3, 0.7).

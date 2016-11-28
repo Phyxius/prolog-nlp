@@ -1,6 +1,9 @@
 utterance(X) :- sentence(X, []).
 sentence(Start, End) :- nounphrase(Start, Rest, Number), verbphrase(Rest, End, Number).
 
+tail(List, Tail) :- append(_, [Tail], List). %from SWI-Prolog documentation
+allbuttail(List, Allbuttail) :- append(List, tail(List), All), prefix(Allbuttail, All).
+
 noun(Noun, Number) :- noun(_, Noun, Number).
 verb(Verb, Number) :- verb(_, Verb, Number).
 adjective(Adjective) :- adjective(_, Adjective).
@@ -14,12 +17,12 @@ nounphrase([Article | Rest], End, Number) :- article(Article, Number), adjective
 adjectivephrase([Adjective | Rest], End, Number) :- adjective(Adjective), adjectivephrase(Rest, End, Number).
 adjectivephrase([Noun | End], End, Number) :- noun(Noun, Number).
 
-
 verbphrase([Verb | End], End, Number) :- verb(Verb, Number).
 %%verbphrase([Adverb, Verb | End], End, Number) :- verb(Verb, Number), adverb(Adverb).
 verbphrase([Verb | Rest], End, Number) :- verb(Verb, Number), nounphrase(Rest, End, _).
 %%verbphrase([Adverb, Verb | Rest], End, Number) :- verb(Verb, Number), adverb(Adverb), nounphrase(Rest, End, _).
 verbphrase([Adverb | Rest], End, Number) :- adverb(Adverb), verbphrase(Rest, End, Number).
+verbphrase(Verbphrase, End, Number) :- tail(Verbphrase, Tail), allbuttail(Verbphrase, Prefix), verbphrase(Prefix, End, Number), adverb(Tail).
 
 
 

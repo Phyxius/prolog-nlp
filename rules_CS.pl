@@ -21,7 +21,7 @@ conjunction(Conjunction) :- conjunction(_, Conjunction).
 
 nounphrase(Adjectivephrase, End, Number) :- adjectivephrase(Adjectivephrase, End, Number).
 nounphrase([Article | Rest], End, Number) :- article(Article, Number), adjectivephrase(Rest, End, Number).
-nounphrase(Phrase, End, Number) :- append(Start, [Conjunction | Rest], Phrase), conjunction(Conjunction), nounphrase(Start, End, _), nounphrase(Rest, End, Number).
+nounphrase(Phrase, End, Number) :- append(Start, [Conjunction | Rest], Phrase), conjunction(Conjunction), nounphrase(Start, [], _), nounphrase(Rest, End, Number).
 
 adjectivephrase([Adjective | Rest], End, Number) :- adjective(Adjective), adjectivephrase(Rest, End, Number).
 adjectivephrase([Noun | End], End, Number) :- noun(Noun, Number).

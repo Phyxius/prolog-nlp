@@ -145,3 +145,6 @@ adverb(terribly).
 adverb(eloquently).
 adverb(stupidly).
 adverb(illegally).
+
+copula(is, singular).
+copula(are, plural).

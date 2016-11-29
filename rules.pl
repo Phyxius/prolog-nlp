@@ -1,3 +1,5 @@
+%TODO: Copulas, prepositional phrases, conjunctions
+
 utterance(Prob, X) :- sentence(Prob, X, []).
 sentence(Prob, Start, End):- nounphrase(P1, Start, Rest),verbphrase(P2, Rest, End), pr(r1, P), Prob is P*P1*P2.
 tail(List, Tail) :- append(_, [Tail], List). %from SWI-Prolog documentation

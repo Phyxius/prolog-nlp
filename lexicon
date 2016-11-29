@@ -1,146 +1,149 @@
-adjective(0.041884816753926704, black).
-adjective(0.06282722513089005, expensive).
-adjective(0.09947643979057591, fake).
-adjective(0.015706806282722512, fantasy).
-adjective(0.031413612565445025, flat).
-adjective(0.015706806282722512, good).
-adjective(0.08900523560209424, graceful).
-adjective(0.02617801047120419, great).
-adjective(0.08900523560209424, hollow).
-adjective(0.06806282722513089, ice).
-adjective(0.031413612565445025, illegal).
-adjective(0.09424083769633508, nice).
-adjective(0.005235602094240838, poisonous).
-adjective(0.09947643979057591, real).
-adjective(0.005235602094240838, reptilian).
-adjective(0.06806282722513089, round).
-adjective(0.010471204188481676, small).
-adjective(0.07329842931937172, stupid).
-adjective(0.07329842931937172, tinfoil).
+adjective(0.07860262008733625, black).
+adjective(0.017467248908296942, expensive).
+adjective(0.034934497816593885, fake).
+adjective(0.043668122270742356, fantasy).
+adjective(0.03056768558951965, flat).
+adjective(0.06550218340611354, good).
+adjective(0.07860262008733625, graceful).
+adjective(0.034934497816593885, great).
+adjective(0.034934497816593885, hollow).
+adjective(0.048034934497816595, ice).
+adjective(0.06550218340611354, illegal).
+adjective(0.043668122270742356, nice).
+adjective(0.08296943231441048, poisonous).
+adjective(0.07423580786026202, real).
+adjective(0.013100436681222707, reptilian).
+adjective(0.056768558951965066, round).
+adjective(0.08296943231441048, small).
+adjective(0.07860262008733625, stupid).
+adjective(0.034934497816593885, tinfoil).
 
-adverb(0.15384615384615385, eloquently).
-adverb(0.38461538461538464, illegally).
-adverb(0.07692307692307693, stupidly).
-adverb(0.3076923076923077, terribly).
-adverb(0.07692307692307693, wisely).
+adverb(0.23076923076923078, eloquently).
+adverb(0.15384615384615385, illegally).
+adverb(0.23076923076923078, stupidly).
+adverb(0.23076923076923078, terribly).
+adverb(0.15384615384615385, wisely).
 
-article(0.4, a, singular).
-article(0.06666666666666667, many, plural).
-article(0.13333333333333333, one, singular).
-article(0.13333333333333333, some, plural).
-article(0.13333333333333333, the, plural).
-article(0.13333333333333333, the, singular).
+article(0.1111111111111111, a, singular).
+article(0.2222222222222222, many, plural).
+article(0.1111111111111111, one, singular).
+article(0.1111111111111111, some, plural).
+article(0.2222222222222222, the, plural).
+article(0.2222222222222222, the, singular).
 
-noun(0.02506854680767724, alien, singular).
-noun(0.007050528789659225, aliens, plural).
-noun(0.014492753623188406, america, singular).
-noun(0.0199764982373678, border, singular).
-noun(0.024676850763807285, borders, plural).
-noun(0.005483744614179397, brain, singular).
-noun(0.009009009009009009, brains, plural).
-noun(0.004308656482569526, cat, singular).
-noun(0.02506854680767724, cats, plural).
-noun(0.009400705052878966, cheese, singular).
-noun(0.00626713670191931, cheeses, plural).
-noun(0.005875440658049354, chemtrail, singular).
-noun(0.01880141010575793, chemtrails, plural).
-noun(0.01880141010575793, china, singular).
-noun(0.0254602428515472, cloud, singular).
-noun(0.004308656482569526, clouds, plural).
-noun(0.02702702702702703, companies, plural).
-noun(0.021151586368977675, company, singular).
-noun(0.0023501762632197414, cult, plural).
-noun(0.007050528789659225, cult, singular).
-noun(0.0003916960438699569, dog, singular).
-noun(0.007442224833529181, dogs, plural).
-noun(0.016059537798668234, earth, singular).
-noun(0.0019584802193497847, economy, singular).
-noun(0.0011750881316098707, government, singular).
-noun(0.0039169604386995694, governments, plural).
-noun(0.009400705052878966, hat, singular).
-noun(0.021151586368977675, hats, plural).
-noun(0.01762632197414806, helicopter, singular).
-noun(0.014492753623188406, helicopters, plural).
-noun(0.019584802193497845, human, singular).
-noun(0.0035252643948296123, humans, plural).
-noun(0.010575793184488837, i, singular).
-noun(0.01880141010575793, illuminati, plural).
-noun(0.0227183705444575, immigrant, singular).
-noun(0.01253427340383862, immigrants, plural).
-noun(0.01645123384253819, insect, singular).
-noun(0.005875440658049354, insects, plural).
-noun(0.0007833920877399138, it, plural).
-noun(0.016842929886408148, it, singular).
-noun(0.023501762632197415, job, singular).
-noun(0.0007833920877399138, jobs, plural).
-noun(0.024676850763807285, knowledge, singular).
-noun(0.01253427340383862, lizard, singular).
-noun(0.0019584802193497847, lizards, plural).
-noun(0.019584802193497845, man, singular).
-noun(0.018409714061887975, men, plural).
-noun(0.02624363493928711, mexico, singular).
-noun(0.004700352526439483, militaries, plural).
-noun(0.02702702702702703, military, singular).
-noun(0.015667841754798278, name, singular).
-noun(0.021934978456717588, names, plural).
-noun(0.0282021151586369, people, plural).
-noun(0.010967489228358794, pepperoni, singular).
-noun(0.01645123384253819, pepperonis, plural).
-noun(0.020759890325107718, person, singular).
-noun(0.004308656482569526, pizza, singular).
-noun(0.006658832745789268, pizzas, plural).
-noun(0.0027418723070896985, plane, singular).
-noun(0.02624363493928711, planes, plural).
-noun(0.0227183705444575, porch, singular).
-noun(0.010184097140618879, porches, plural).
-noun(0.0007833920877399138, robot, singular).
-noun(0.004700352526439483, robots, plural).
-noun(0.0050920485703094395, sausage, singular).
-noun(0.014884449667058363, sausages, plural).
-noun(0.020759890325107718, trump, singular).
-noun(0.005875440658049354, truth, singular).
-noun(0.02506854680767724, truths, plural).
-noun(0.014492753623188406, wall, singular).
-noun(0.006658832745789268, walls, plural).
-noun(0.027810419114766942, we, plural).
-noun(0.0007833920877399138, wriwenis, singular).
+copula(0.6666666666666666, are, plural).
+copula(0.3333333333333333, is, singular).
 
-verb(0.026729559748427674, accept, plural).
-verb(0.059748427672955975, accepts, singular).
-verb(0.012578616352201259, are, plural).
-verb(0.018867924528301886, consume, plural).
-verb(0.04874213836477988, consumes, singular).
-verb(0.007861635220125786, contemplate, plural).
-verb(0.006289308176100629, contemplates, singular).
-verb(0.0015723270440251573, control, plural).
-verb(0.0047169811320754715, controls, singular).
-verb(0.0015723270440251573, eat, plural).
-verb(0.025157232704402517, eats, singular).
-verb(0.03459119496855346, exalt, plural).
-verb(0.0110062893081761, exalts, singular).
-verb(0.04245283018867924, exist, plural).
-verb(0.012578616352201259, exists, singular).
-verb(0.0330188679245283, hate, plural).
-verb(0.03459119496855346, hates, singular).
-verb(0.0015723270440251573, is, singular).
-verb(0.050314465408805034, join, plural).
-verb(0.020440251572327043, joins, singular).
-verb(0.015723270440251572, like, plural).
-verb(0.0047169811320754715, likes, singular).
-verb(0.05817610062893082, love, plural).
-verb(0.040880503144654086, loves, singular).
-verb(0.01729559748427673, need, plural).
-verb(0.02358490566037736, needs, singular).
-verb(0.04716981132075472, pay, plural).
-verb(0.012578616352201259, pays, singular).
-verb(0.050314465408805034, praise, plural).
-verb(0.0031446540880503146, praises, singular).
-verb(0.0047169811320754715, receive, plural).
-verb(0.0330188679245283, receives, singular).
-verb(0.040880503144654086, scan, plural).
-verb(0.0440251572327044, scans, singular).
-verb(0.020440251572327043, tell, plural).
-verb(0.020440251572327043, tells, singular).
-verb(0.05660377358490566, want, plural).
-verb(0.05188679245283019, wants, singular).
+noun(0.020966595593461264, alien, singular).
+noun(0.01812366737739872, aliens, plural).
+noun(0.015991471215351813, america, singular).
+noun(0.016346837242359632, border, singular).
+noun(0.020966595593461264, borders, plural).
+noun(0.012437810945273632, brain, singular).
+noun(0.026297085998578537, brains, plural).
+noun(0.0028429282160625444, cat, singular).
+noun(0.023098791755508174, cats, plural).
+noun(0.013503909026297086, cheese, singular).
+noun(0.013148542999289269, cheeses, plural).
+noun(0.025941719971570718, chemtrail, singular).
+noun(0.015280739161336177, chemtrails, plural).
+noun(0.0010660980810234541, china, singular).
+noun(0.010660980810234541, cloud, singular).
+noun(0.026297085998578537, clouds, plural).
+noun(0.015636105188343994, companies, plural).
+noun(0.014925373134328358, company, singular).
+noun(0.015636105188343994, cult, plural).
+noun(0.01101634683724236, cult, singular).
+noun(0.006041222459132907, dog, singular).
+noun(0.012437810945273632, dogs, plural).
+noun(0.005330490405117271, earth, singular).
+noun(0.007107320540156361, economy, singular).
+noun(0.0010660980810234541, government, singular).
+noun(0.014214641080312722, governments, plural).
+noun(0.006396588486140725, hat, singular).
+noun(0.008884150675195452, hats, plural).
+noun(0.008884150675195452, helicopter, singular).
+noun(0.02061122956645345, helicopters, plural).
+noun(0.005330490405117271, human, singular).
+noun(0.0042643923240938165, humans, plural).
+noun(0.022743425728500355, i, plural).
+noun(0.026297085998578537, illuminati, plural).
+noun(0.010660980810234541, immigrant, singular).
+noun(0.0216773276474769, immigrants, plural).
+noun(0.01812366737739872, insect, singular).
+noun(0.007462686567164179, insects, plural).
+noun(0.022743425728500355, it, plural).
+noun(0.0007107320540156361, it, singular).
+noun(0.026652452025586353, job, singular).
+noun(0.0021321961620469083, jobs, plural).
+noun(0.005685856432125089, knowledge, singular).
+noun(0.01279317697228145, lizard, singular).
+noun(0.02203269367448472, lizards, plural).
+noun(0.022388059701492536, man, singular).
+noun(0.022743425728500355, men, plural).
+noun(0.016702203269367447, mexico, singular).
+noun(0.0007107320540156361, militaries, plural).
+noun(0.0017768301350390902, military, singular).
+noun(0.006396588486140725, name, singular).
+noun(0.0007107320540156361, names, plural).
+noun(0.01990049751243781, people, plural).
+noun(0.007462686567164179, pepperoni, singular).
+noun(0.024875621890547265, pepperonis, plural).
+noun(0.008173418621179816, person, singular).
+noun(0.023809523809523808, pizza, singular).
+noun(0.01954513148542999, pizzas, plural).
+noun(0.016346837242359632, plane, singular).
+noun(0.013503909026297086, planes, plural).
+noun(0.026297085998578537, porch, singular).
+noun(0.012437810945273632, porches, plural).
+noun(0.011727078891257996, robot, singular).
+noun(0.010660980810234541, robots, plural).
+noun(0.016346837242359632, sausage, singular).
+noun(0.013148542999289269, sausages, plural).
+noun(0.0007107320540156361, trump, singular).
+noun(0.0021321961620469083, truth, singular).
+noun(0.0017768301350390902, truths, plural).
+noun(0.014214641080312722, wall, singular).
+noun(0.005685856432125089, walls, plural).
+noun(0.017412935323383085, we, plural).
+noun(0.013503909026297086, wriwenis, singular).
+
+verb(0.048143053645116916, accept, plural).
+verb(0.033012379642365884, accepts, singular).
+%verb(0.052269601100412656, are, plural).
+verb(0.0453920220082531, consume, plural).
+verb(0.015130674002751032, consumes, singular).
+verb(0.0041265474552957355, contemplate, plural).
+verb(0.011004126547455296, contemplates, singular).
+verb(0.001375515818431912, control, plural).
+verb(0.013755158184319119, controls, singular).
+verb(0.015130674002751032, eat, plural).
+verb(0.04676753782668501, eats, singular).
+verb(0.001375515818431912, exalt, plural).
+verb(0.04264099037138927, exalts, singular).
+verb(0.04264099037138927, exist, plural).
+verb(0.015130674002751032, exists, singular).
+verb(0.02063273727647868, hate, plural).
+verb(0.048143053645116916, hates, singular).
+%verb(0.0343878954607978, is, singular).
+verb(0.024759284731774415, join, plural).
+verb(0.03851444291609354, joins, singular).
+verb(0.008253094910591471, like, plural).
+verb(0.04264099037138927, likes, singular).
+verb(0.0041265474552957355, love, plural).
+verb(0.01925722145804677, loves, singular).
+verb(0.005502063273727648, need, plural).
+verb(0.03851444291609354, needs, singular).
+verb(0.03576341127922971, pay, plural).
+verb(0.009628610729023384, pays, singular).
+verb(0.023383768913342505, praise, plural).
+verb(0.024759284731774415, praises, singular).
+verb(0.04264099037138927, receive, plural).
+verb(0.015130674002751032, receives, singular).
+verb(0.04126547455295736, scan, plural).
+verb(0.002751031636863824, scans, singular).
+verb(0.026134800550206328, tell, plural).
+verb(0.04126547455295736, tells, singular).
+verb(0.03163686382393398, want, plural).
+verb(0.033012379642365884, wants, singular).
 

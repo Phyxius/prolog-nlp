@@ -15,8 +15,6 @@ verb(exists, singular).
 verb(exist, plural).
 verb(pays, singular).
 verb(pay, plural).
-verb(is, singular).
-verb(are, plural).
 verb(receives, singular).
 verb(receive, plural).
 verb(accepts, singular).

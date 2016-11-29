@@ -146,3 +146,8 @@ adverb(illegally).
 
 copula(is, singular).
 copula(are, plural).
+
+conjunction(and).
+conjunction(but).
+conjunction(or).
+conjunction(nor).

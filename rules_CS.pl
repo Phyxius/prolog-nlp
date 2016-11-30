@@ -6,8 +6,8 @@ tail(List, Tail) :- append(_, [Tail], List). %from SWI-Prolog documentation
 head([Head | _], Head).
 nonempty(List) :- length(List, Length), Length > 0.
 allbuthead([_ | Rest], Rest).
-allbuttail([_], Allbuttail) :- Allbuttail == [].
-allbuttail(List, Allbuttail) :- length(List, Length), Length > 1, tail(List, Tail), append(List, Tail, All), prefix(Allbuttail, All), length(Allbuttail, Returnlength), Returnlength =:= Length - 1.
+allbuttail([_], []).
+allbuttail([Head | Rest], Allbuttail) :- allbuttail(Rest, Allbuttail2), append([Head], Allbuttail2, Allbuttail).%length(List, Length), Length > 1, tail(List, Tail), append(List, Tail, All), prefix(Allbuttail, All), length(Allbuttail, Returnlength), Returnlength =:= Length - 1.
 all([], _).
 all([Head | Rest], Predicate) :- call(Predicate, Head), all(Rest, Predicate).
 

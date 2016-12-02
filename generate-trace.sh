@@ -1,0 +1,1 @@
+swipl -g "[rules_CS, lexicon],leash(-all),trace,utterance([]),nl." -t halt

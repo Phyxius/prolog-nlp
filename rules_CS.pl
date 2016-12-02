@@ -1,3 +1,4 @@
+%TODO: Adverb conjunctions, prepositioonal phrases
 utterance(X) :- sentence(X, []).
 utterance(X) :- sentence(X, [Conjunction | Rest]), conjunction(Conjunction), utterance(Rest).
 sentence(Start, End) :- nounphrase(Start, Rest, Number), verbphrase(Rest, End, Number).
@@ -27,12 +28,14 @@ adjectivephrase([Adjective | Rest], End, Number) :- adjective(Adjective), adject
 adjectivephrase([Noun | End], End, Number) :- noun(Noun, Number).
 adjectivephrase([Adjective, Conjunction, Adjective2 | Rest], End, Number) :- adjective(Adjective), conjunction(Conjunction), adjective(Adjective2), append([Adjective2], Rest, Subphrase), adjectivephrase(Subphrase, End, Number).
 
-verbphrase([Verb | End], End, Number) :- verb(Verb, Number).
-verbphrase([Verb | Rest], End, Number) :- verb(Verb, Number), nounphrase(Rest, End, _).
-verbphrase([Adverb | Rest], End, Number) :- adverb(Adverb), length(Rest, Length), Length > 0, verbphrase(Rest, End, Number).
-verbphrase([Copula | Object], End, Number) :- copula(Copula, Number), copularobject(Object, Number, End).
-verbphrase(Verbphrase, End, Number) :- tail(Verbphrase, Tail), allbuttail(Verbphrase, Prefix), verbphrase(Prefix, End, Number), adverb(Tail).
+
+verbphrase(Verbphrase, End, Number) :- append([Adverbphrase, [Verb], Nounphrase, Adverbphrase2, End], Verbphrase), adverbphrase(Adverbphrase), verb(Verb, Number), ([] == Nounphrase; nounphrase(Nounphrase, [], _)), adverbphrase(Adverbphrase2).
+verbphrase(Verbphrase, End, Number) :- append([[Copula], Copularobject, End], Verbphrase), copula(Copula, Number), copularobject(Copularobject, Number, End).
 verbphrase(Conjoinedverbphrase, End, Number) :- append(First, [Conjunction | Rest], Conjoinedverbphrase), verbphrase(First, [], Number), conjunction(Conjunction), verbphrase(Rest, End, Number).
+
+adverbphrase([]).
+adverbphrase([Adverb, Conjunction, Adverb2 | Rest]) :- adverb(Adverb), conjunction(Conjunction), adverb(Adverb2), append([Adverb2], Rest, Rest2), adverbphrase(Rest2).
+adverbphrase([Adverb | Rest]) :- adverb(Adverb), adverbphrase(Rest).
 
 copularobject([], _, _).
 copularobject([Noun], plural, _) :- noun(Noun, plural).

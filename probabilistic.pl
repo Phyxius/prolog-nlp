@@ -40,11 +40,11 @@ prepositionalphrase(Prob, [Preposition | Nounphrase]) :- preposition(P1, Preposi
 prepositionalphrase(Prob, Compoundphrase) :- append(First, Rest, Compoundphrase), nonempty(First), nonempty(Rest), prepositionalphrase(P1, First), prepositionalphrase(P2, Rest), pr(r16, P), Prob is P*P1*P2.
 prepositionalphrase(Prob, Compoundphrase) :- append([First, [Conjunction], Rest], Compoundphrase), nonempty(First), nonempty(Rest), conjunction(P1, Conjunction), prepositionalphrase(P2, First), prepositionalphrase(P3, Rest), pr(r17, P), Prob is P*P1*P2*P3.
 
-adverbphrase(Prob, []), pr(r18, P), Prob is P.
+adverbphrase(Prob, []) :- pr(r18, P), Prob is P.
 adverbphrase(Prob, [Adverb, Conjunction, Adverb2 | Rest]) :- adverb(P1, Adverb), conjunction(P2, Conjunction), adverb(P3, Adverb2), append([Adverb2], Rest, Rest2), adverbphrase(P4, Rest2), pr(r19, P), Prob is P*P1*P2*P3*P4.
 adverbphrase(Prob, [Adverb | Rest]) :- adverb(P1, Adverb), adverbphrase(P2, Rest), pr(r20, P), Prob is P*P1*P2.
 
-copularobject(Prob, [], _), pr(r21, P), Prob is P.
+copularobject(Prob, [], _) :- pr(r21, P), Prob is P.
 copularobject(Prob, [Noun], _) :- noun(P1, Noun), pr(r22, P), Prob is P*P1.
 copularobject(Prob, [Article | Rest], End) :- article(P1, Article), adjectivephrase(P2, Rest, End), pr(r23, P), Prob is P*P1*P2.
 copularobject(Prob, [Adjective | Rest], Rest) :- adjective(P1, Adjective), pr(r24, P), Prob is P*P1.

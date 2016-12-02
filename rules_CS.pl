@@ -1,4 +1,3 @@
-%TODO: repositional phrases
 utterance(X) :- sentence(X, []).
 utterance(X) :- sentence(X, [Conjunction | Rest]), conjunction(Conjunction), utterance(Rest).
 sentence(Start, End) :- nounphrase(Start, Rest, Number), verbphrase(Rest, End, Number).

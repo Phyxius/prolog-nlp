@@ -1,7 +1,7 @@
 utterance(X) :- sentence(X, []).
 utterance(X) :- sentence(X, [Conjunction | Rest]), conjunction(Conjunction), utterance(Rest).
-sentence(Start, End) :- nounphrase(Start, Rest, Number), verbphrase(Rest, End, Number).
 sentence(Start, End) :- append(Prepositionalphrase, Rest, Start), nonempty(Prepositionalphrase), prepositionalphrase(Prepositionalphrase), sentence(Rest, End).
+sentence(Start, End) :- nounphrase(Start, Rest, Number), verbphrase(Rest, End, Number).
 
 tail(List, Tail) :- append(_, [Tail], List). %from SWI-Prolog documentation
 head([Head | _], Head).

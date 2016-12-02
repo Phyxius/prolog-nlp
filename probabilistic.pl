@@ -15,12 +15,7 @@ all([Head | Rest], Predicate) :- call(Predicate, Head), all(Rest, Predicate).
 
 noun(Prob, Noun) :- noun(Prob, Noun, _).
 verb(Prob, Verb) :- verb(Prob, Verb, _).
-adjective(Prob, Adjective) :- adjective(Prob, Adjective).
 article(Prob, Article) :- article(Prob, Article, _).
-adverb(Prob, Adverb) :- adverb(Prob, Adverb).
-copula(Prob, Copula) :- copula(Prob, Copula).
-conjunction(Prob, Conjunction) :- conjunction(Prob, Conjunction).
-preposition(Prob, Preposition) :- preposition(Prob, Preposition).
 
 nounphrase(Prob, Adjectivephrase, End) :- adjectivephrase(P1, Adjectivephrase, End), pr(r4, P), Prob is P*P1.
 nounphrase(Prob, [Article | Rest], End) :- article(P1, Article), adjectivephrase(P2, Rest, End), pr(r5, P), Prob is P*P1*P2.

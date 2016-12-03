@@ -1,0 +1,7 @@
+Teamwork breakdown:
+	Shea Polansky:
+		-Context sensitive rules
+		-Scripts to generate final lexicon and traces
+	Robert Spidle:
+		-Lexicon maintenence and additions
+		-Probabilistic rules

@@ -1,1 +1,1 @@
-swipl -g "[rules_CS, lexicon],leash(-all),trace,utterance([alient, exist, under, the, flat, earth]),nl, utterance([black, helicopters, are, terribly, real]),nl,utterance([trump,wants,a,great,great,wall]),nl,utterance([the,robot,scans,small,and,round,brains]),nl." -t halt &> traces.txt
+swipl -g "[rules_CS, lexicon],leash(-all),trace,utterance([aliens, exist, under, the, flat, earth]),nl, utterance([black, helicopters, are, terribly, real]),nl,utterance([trump,wants,a,great,great,wall]),nl,utterance([the,robot,scans,small,and,round,brains]),nl." -t halt &> traces.txt
